@@ -5,7 +5,7 @@ In GB Studio, the code regarding actor collision has an engine-defined number of
 
 *SetActorInvincibilityFrames* allows for the invincibility frames of actors to be dynamically modified and viewed, with both an engine field and two events.
 
-*MinimizeActorInvincibilityFrames* is a minimal version of the plugin that contains no events or engine fields, and simply changes the number of engined-defined invincibility frames from 20 to 4.
+*MinimizeActorInvincibilityFrames* is a minimal version of the plugin that contains no events or engine fields, and simply changes the number of engine-defined invincibility frames from 20 to 4.
 
 ## Usage
 
@@ -25,9 +25,9 @@ To update this plugin to a newer release, simply merge the contents of the updat
 
 *MinimizeActorInvincibilityFrames* changes the value of `PLAYER_HURT_IFRAMES` in `actor.h` from 20 to 4. Other than a comment, on the aforementioned line, this is the only change done to the engine. It is possible to edit the value of 4 to a higher or lower value, depending on your needs. I found that a value of 4 is a good middle ground between not causing too much lag, and not causing too much missed actor collision checks.
 
-At the time of publishing both plugins (GB Studio 4.1.3), [actor.c](https://github.com/chrismaltby/gbvm/commit/dce75851b74584d808187b8628989be0891687fa) was last updated with a commit hash of `dce7585` and [actor.h](https://github.com/chrismaltby/gbvm/commit/33e8e44a02f66744cb19293e4bca22cd7ae45e1b) was last updated with a commit hash of `33e8e44`. If these files were updated. If either plugin is installed on a version that is not `4.2.0-e1`, the GB Studio compiler will return a warning. If you have verified the plugin works, update the version text within `engine/engine.json` to resolve the warning.
+If either plugin is installed on a version that is not `4.2.0-e1`, the GB Studio compiler will return a warning. If you have verified the plugin works on a different version, update the version text within `engine/engine.json` to resolve the warning. At the time of publishing both plugins (GB Studio 4.1.3), [actor.c](https://github.com/chrismaltby/gbvm/commit/dce75851b74584d808187b8628989be0891687fa) was last updated with a commit hash of `dce7585` and [actor.h](https://github.com/chrismaltby/gbvm/commit/33e8e44a02f66744cb19293e4bca22cd7ae45e1b) was last updated with a commit hash of `33e8e44`. If these files were updated, an update may be required for either plugin to work.
 
-To manually update either plugin, try seeing what was modified in the file, and adapting those changes to the plugin's file. A [pull request](https://github.com/KirbyKing186/GBS-SetActorInvincibilityFrames/pulls) would be highly appreciated if you can update it yourself. Otherwise, you can also make an [issue](https://github.com/KirbyKing186/GBS-SetActorInvincibilityFrames/issues) and I will try and update it myself as soon as possible.
+To manually update either plugin, try seeing what was modified in the file, and adapting those changes to the plugin's file. If you can update it yourself, a [pull request](https://github.com/KirbyKing186/GBS-SetActorInvincibilityFrames/pulls) would be highly appreciated. Otherwise, you can make an [issue](https://github.com/KirbyKing186/GBS-SetActorInvincibilityFrames/issues) and I will try and update it myself as soon as possible.
 
 ## Credits
 
