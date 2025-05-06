@@ -1,0 +1,16 @@
+{
+  "version": "4.2.0-e1",
+
+"fields": [
+  {
+    "key": "custom_iframes",
+    "label": "Invincibility Frames",
+    "group": "Actor Invincibility Frames",
+    "type": "slider",
+        "min": 0,
+        "max": 255,
+    "cType": "UBYTE",
+    "defaultValue": 20
+  }
+]
+}
